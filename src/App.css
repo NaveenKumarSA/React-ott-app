@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.root { 
+  --theme_grey:#9caeb1;
+  --white:#eee
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie-list-row {
+  overflow-x: scroll;
+}
+.movie-card:hover {
+  margin: 5px;
+  padding: 9px;
+  transform: translateY(-20px);
+  transition: 1s;
+  cursor: pointer;
+}
+.movie-card {
+  margin: 5px;
+  min-width: 250px !important;
+  padding: 9px;
+  /* background-color: var(--bs-gray) !important; */
+}
+.movie-card-btn-grp {
+  display: contents !important;
+  /* display: flex !important;
+  justify-content: space-between !important; */
+}
+.image-tag{
+  width: 100px;
+  height: 300px;
+}
+.red-heart{
+  color: var(--bs-red) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* scroll bar */
+::-webkit-scrollbar {
+  width: .2px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff; 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
 }
