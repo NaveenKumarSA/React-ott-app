@@ -10,8 +10,6 @@ export function getFavoriteList() {
   }
 export default function favoriteListAction() {
     return (
-        <div>
-            
-        </div>
+        <div></div>
     )
 }
